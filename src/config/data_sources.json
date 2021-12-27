@@ -1,5 +1,5 @@
 {
-    "breast-cancer-dataset": {
+    "breas_cancer-dataset": {
         "path": "http://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/breast-cancer-wisconsin.data"
     }
 }

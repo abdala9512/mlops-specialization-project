@@ -38,7 +38,9 @@ class FeatureSelector:
       self.Y_train, 
       self.Y_test) = self.__split_data()
 
-    
+    def __train_model_and_calc_metrics(self):
+        pass
+
     def run_fs_report(self):
         pass
     
@@ -47,7 +49,7 @@ class FeatureSelector:
         """
 
         selector = SelectKBest(scorer, k=k)
-        selector.fit_transform(self.X, self.y)
+        selector.fit_transform(self.X, self.Y)
 
         feature_idx = selector.get_support()
 
@@ -63,6 +65,9 @@ class FeatureSelector:
 
         return self.data.drop(self.target,axis=1).columns[]
 
+
+    def __calculate_regression_metrics(self):
+        pass
 
     def __calculate_classification_metrics(
         self,
@@ -84,7 +89,7 @@ class FeatureSelector:
         
         return acc, roc, prec, rec, f1
 
-    def __split_data(self) -> tuple:
+    def __split_data(self) -> Tuple:
         """Split into train and test the data"""
         X_train, X_test, Y_train, Y_test = train_test_split(
             self.X, 

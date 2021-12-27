@@ -1,0 +1,12 @@
+{
+    "dataset": {
+        "data_source": "",
+        "feature_names": [],
+        "SCALE_MINMAX_FEATURE_KEYS": [],
+        "SCALE_01_FEATURE_KEYS": [],
+        "SCALE_Z_FEATURE_KEYS": [],
+        "VOCAB_FEATURE_KEYS": [],
+        "HASH_STRING_FEATURE_KEYS": [],
+        "LABEL_KEY": ""
+    }
+}
